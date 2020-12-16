@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sample2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/OCRButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/ImageContainer"
+        android:layout_marginTop="3dp"
+        android:background="#166e78"
+        android:clickable="true"
+        android:onClick="processImage">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="processImage"
+            android:text="RUN OCR"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/OCRButtonContainer"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="4dp"
+         />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OCRButtonContainer"
+        android:layout_marginTop="2dp"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/OCRTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#fff"
+            android:scrollbars="vertical"
+            android:text="여기에 결과 출력됩니다."
+            android:textColor="#169cdf"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OCRButtonContainer"
+        android:layout_marginTop="128dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="146dp"
+            android:layout_marginEnd="147dp"
+            android:visibility="gone"
+            android:text="정보 시각화" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SendActivity">
+
+    <TextView
+        android:id="@+id/title_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text = "대표 전화 번호"/>
+    <TextView
+        android:id="@+id/txtResult_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/title_location"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text = "적발 장소"/>
+    <TextView
+        android:id="@+id/txtResult_location"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/title_date"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text = "적발 시간"/>
+    <TextView
+        android:id="@+id/txtResult_date"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전송" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+</LinearLayout>
